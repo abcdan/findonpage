@@ -12,3 +12,5 @@ request.get({ url: url, headers: headers }, function (e, r, body) {
   });
    
 }
+
+module.exports = checkOnpage;
