@@ -12,7 +12,7 @@ var findonpage = require('findonpage')
 
 findonpage("url","word/sentence", (data) => {
     console.log(data) // false/true
-}
+})
 ```
 
 This will return true/false in the console, you can now use the true/false to do other cool stuff!
