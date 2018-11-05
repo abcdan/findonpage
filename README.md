@@ -15,7 +15,7 @@ findonpage("url","word/sentence", (data) => {
 }
 ```
 
-This will return true/false in the console, more features coming soon
+This will return true/false in the console, you can now use the true/false to do other cool stuff!
 
 # Credits
 Thanks CMDJojo for helping me making this small package
