@@ -1,4 +1,4 @@
-# findpnpage
+# findonpage
 Simple Node.js Library to check if something is on a webpage
 
 # How to setup
