@@ -10,10 +10,12 @@ If you've required the package, as seen here above, then simply do this:
 ```
 var findonpage = require('findonpage')
 
-findonpage(
-    url = "the url of the page you want to check if a thing is on it",
-    word ="the word/sentence it has to look for (case sensitve)"
-)
+findonpage("url","word/sentence", (data) => {
+    console.log(data) // false/true
+}
 ```
 
 This will return true/false in the console, more features coming soon
+
+# Credits
+Thanks CMDJojo for helping me making this small package
