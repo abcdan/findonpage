@@ -1,4 +1,5 @@
 function checkOnpage(url,word, cb){
+    if(typeof cb !== "function") throw new Error("Callback must be a function")
     var request = require("request");
     const fakeUa = require('fake-useragent');
     
@@ -7,7 +8,7 @@ function checkOnpage(url,word, cb){
       'User-Agent': fakeUa()
     };
     request.get({ url: url, headers: headers }, function (e, r, body) {
-       return cb(body.match(eval("/"+word+"/")) !== null)
+      cb(!e && res && res.statusCode==200 && res.body && body.match(eval("/"+word+"/")) !== null)
       });
        
     }
