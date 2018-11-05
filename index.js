@@ -8,7 +8,7 @@ var headers = {
 };
 request.get({ url: url, headers: headers }, function (e, r, body) {
     var regex = new RegExp(eval("/"+word+"/"))
-    console.log(regex.test(body))
+    return(regex.test(body))
   });
    
 }
