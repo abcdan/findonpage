@@ -1,4 +1,4 @@
-# onpage
+# findpnpage
 Simple Node.js Library to check if something is on a webpage
 
 # How to setup
@@ -15,3 +15,5 @@ findonpage(
     word ="the word/sentence it has to look for (case sensitve)"
 )
 ```
+
+This will return true/false in the console, more features coming soon

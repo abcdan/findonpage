@@ -1,6 +1,6 @@
 {
   "name": "findonpage",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Simple Node.js Library to check if something is on a webpage",
   "main": "index.js",
   "scripts": {
