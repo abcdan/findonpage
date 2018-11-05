@@ -8,7 +8,7 @@ function checkOnpage(url,word, cb){
       'User-Agent': fakeUa()
     };
     request.get({ url: url, headers: headers }, function (e, r, body) {
-      cb(!e && res && res.statusCode==200 && res.body && body.match(eval("/"+word+"/")) !== null)
+        cb(!e && res && res.body && body && body.match(eval("/"+word+"/")) !== null)
       });
        
     }
