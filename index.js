@@ -21,6 +21,6 @@ module.exports = {
     anticf(url, str, callback) {
         if (typeof callback !== 'function') throw new Error('Callback must be a function.');
 
-        cloudscraper.get(url).then((res) => callback(res && res.includes(res)));
+        cloudscraper.get(url).then((res) => callback(res && res.includes(res))).catch((err) => callback(err));
     }
 };
